@@ -12,7 +12,7 @@ export function ExperienceBar() {
             <div>
                 <div style={{ width: `${percetenToNextLevel}%` }} />
                 <span className={styles.currentExperience} style={{ left: `${percetenToNextLevel}%` }}>
-                    {currentExperience} xp
+                    {percetenToNextLevel !== 0 ? `${currentExperience}xp` : ``}
                 </span>
             </div>
             <span>{experienceToNextLevel}xp</span>
