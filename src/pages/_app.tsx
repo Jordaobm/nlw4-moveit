@@ -1,8 +1,12 @@
+import { LoggedProvider } from '../context/Logged'
 import '../styles/GlobalStyles.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <LoggedProvider>
+      <Component {...pageProps} />
+    </LoggedProvider>
+
   )
 }
 

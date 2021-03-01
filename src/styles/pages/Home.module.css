@@ -8,9 +8,24 @@
 }
 
 .container section {
+    margin-top: 2rem;
     flex:1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content:center;
+}
+
+@media(max-width:900px){
+
+    .container section {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .container section > div {
+        width: 100%;
+        max-width: 600px;
+    }
 }
